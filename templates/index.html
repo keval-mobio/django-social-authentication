@@ -1,0 +1,11 @@
+{% load socialaccount %}
+<html>
+    <body>
+        <h1>My Google OAuth Project </h1>
+        {% comment %} {% if user.is_authenticated %}
+  <p>Welcome, You are logged in as {{ user.username }}</p>
+        {% else %} {% endcomment %}
+  {% comment %} <a href="{% url "social:begin" 'google' %}">Login With Google</a> {% endcomment %}
+        {% comment %} {% endif %} {% endcomment %}
+    </body>
+</html>
